@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSCulling", "VisualStudio2010\Chatper11\GSCulling\GSCulling.vcxproj", "{B8957827-E4EE-4FF0-B44A-B3219B43816F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E98459A-64AE-4734-A537-4AB52ED637E1} = {7E98459A-64AE-4734-A537-4AB52ED637E1}
+		{71AF75A0-52B6-4C1B-8E56-CB31C6741A18} = {71AF75A0-52B6-4C1B-8E56-CB31C6741A18}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSExplode", "VisualStudio2010\Chatper11\GSExplode\GSExplode.vcxproj", "{2C950BC9-87E0-42F7-B191-F388738B2959}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSNormals", "VisualStudio2010\Chatper11\GSNormals\GSNormals.vcxproj", "{0598ACC6-650C-4B44-98DA-CAF9254AB678}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSTessellate", "VisualStudio2010\Chatper11\GSTessellate\GSTessellate.vcxproj", "{AEA5DC6C-5C3E-422F-AE3D-F598097ADE8B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Julia", "VisualStudio2010\Chatper11\Julia\Julia.vcxproj", "{BF3F5672-0EA2-44CD-82D5-86DA326C420A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Perspective", "VisualStudio2010\Chatper11\Perspective\Perspective.vcxproj", "{A6DEFBBE-2DDB-4F46-8449-C97EE49F004C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "instancing", "VisualStudio2010\Chapter12\instancing\instancing.vcxproj", "{CC13B0E4-980F-46E1-9DA2-C7C4545CE202}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "flocking", "VisualStudio2010\Chapter12\flocking\flocking.vcxproj", "{CC13B0E4-980F-46E1-9DA2-C7C4545CE203}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLTools", "VisualStudio2008\GLTools\GLTools.vcxproj", "{7E98459A-64AE-4734-A537-4AB52ED637E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut", "freeglut-2.6.0\VisualStudio2008\freeglut.vcxproj", "{1AE4E979-0D35-4747-BF8E-DD60358F49DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{FC2F8CBC-ECA7-46AD-9596-72E295B9F1DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut_static", "freeglut-2.6.0\VisualStudio2008Static\freeglut_static.vcxproj", "{71AF75A0-52B6-4C1B-8E56-CB31C6741A18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8957827-E4EE-4FF0-B44A-B3219B43816F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B8957827-E4EE-4FF0-B44A-B3219B43816F}.Debug|Win32.Build.0 = Debug|Win32
+		{B8957827-E4EE-4FF0-B44A-B3219B43816F}.Release|Win32.ActiveCfg = Release|Win32
+		{B8957827-E4EE-4FF0-B44A-B3219B43816F}.Release|Win32.Build.0 = Release|Win32
+		{2C950BC9-87E0-42F7-B191-F388738B2959}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C950BC9-87E0-42F7-B191-F388738B2959}.Debug|Win32.Build.0 = Debug|Win32
+		{2C950BC9-87E0-42F7-B191-F388738B2959}.Release|Win32.ActiveCfg = Release|Win32
+		{2C950BC9-87E0-42F7-B191-F388738B2959}.Release|Win32.Build.0 = Release|Win32
+		{0598ACC6-650C-4B44-98DA-CAF9254AB678}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0598ACC6-650C-4B44-98DA-CAF9254AB678}.Debug|Win32.Build.0 = Debug|Win32
+		{0598ACC6-650C-4B44-98DA-CAF9254AB678}.Release|Win32.ActiveCfg = Release|Win32
+		{0598ACC6-650C-4B44-98DA-CAF9254AB678}.Release|Win32.Build.0 = Release|Win32
+		{AEA5DC6C-5C3E-422F-AE3D-F598097ADE8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AEA5DC6C-5C3E-422F-AE3D-F598097ADE8B}.Debug|Win32.Build.0 = Debug|Win32
+		{AEA5DC6C-5C3E-422F-AE3D-F598097ADE8B}.Release|Win32.ActiveCfg = Release|Win32
+		{AEA5DC6C-5C3E-422F-AE3D-F598097ADE8B}.Release|Win32.Build.0 = Release|Win32
+		{BF3F5672-0EA2-44CD-82D5-86DA326C420A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF3F5672-0EA2-44CD-82D5-86DA326C420A}.Debug|Win32.Build.0 = Debug|Win32
+		{BF3F5672-0EA2-44CD-82D5-86DA326C420A}.Release|Win32.ActiveCfg = Release|Win32
+		{BF3F5672-0EA2-44CD-82D5-86DA326C420A}.Release|Win32.Build.0 = Release|Win32
+		{A6DEFBBE-2DDB-4F46-8449-C97EE49F004C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6DEFBBE-2DDB-4F46-8449-C97EE49F004C}.Debug|Win32.Build.0 = Debug|Win32
+		{A6DEFBBE-2DDB-4F46-8449-C97EE49F004C}.Release|Win32.ActiveCfg = Release|Win32
+		{A6DEFBBE-2DDB-4F46-8449-C97EE49F004C}.Release|Win32.Build.0 = Release|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE202}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE202}.Debug|Win32.Build.0 = Debug|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE202}.Release|Win32.ActiveCfg = Release|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE202}.Release|Win32.Build.0 = Release|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE203}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE203}.Debug|Win32.Build.0 = Debug|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE203}.Release|Win32.ActiveCfg = Release|Win32
+		{CC13B0E4-980F-46E1-9DA2-C7C4545CE203}.Release|Win32.Build.0 = Release|Win32
+		{7E98459A-64AE-4734-A537-4AB52ED637E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E98459A-64AE-4734-A537-4AB52ED637E1}.Debug|Win32.Build.0 = Debug|Win32
+		{7E98459A-64AE-4734-A537-4AB52ED637E1}.Release|Win32.ActiveCfg = Release|Win32
+		{7E98459A-64AE-4734-A537-4AB52ED637E1}.Release|Win32.Build.0 = Release|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Debug|Win32.Build.0 = Debug|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Release|Win32.ActiveCfg = Release|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Release|Win32.Build.0 = Release|Win32
+		{71AF75A0-52B6-4C1B-8E56-CB31C6741A18}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71AF75A0-52B6-4C1B-8E56-CB31C6741A18}.Debug|Win32.Build.0 = Debug|Win32
+		{71AF75A0-52B6-4C1B-8E56-CB31C6741A18}.Release|Win32.ActiveCfg = Release|Win32
+		{71AF75A0-52B6-4C1B-8E56-CB31C6741A18}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB} = {FC2F8CBC-ECA7-46AD-9596-72E295B9F1DD}
+		{7E98459A-64AE-4734-A537-4AB52ED637E1} = {FC2F8CBC-ECA7-46AD-9596-72E295B9F1DD}
+		{71AF75A0-52B6-4C1B-8E56-CB31C6741A18} = {FC2F8CBC-ECA7-46AD-9596-72E295B9F1DD}
+	EndGlobalSection
+EndGlobal
