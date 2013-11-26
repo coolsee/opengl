@@ -42,7 +42,7 @@
     <_ProjectFileVersion>11.0.60610.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -136,9 +136,6 @@
     <ClInclude Include="..\include\GL\freeglut_std.h" />
     <ClInclude Include="..\src\freeglut_teapot_data.h" />
     <ClInclude Include="..\include\GL\glut.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\freeglut.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

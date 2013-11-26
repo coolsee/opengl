@@ -41,7 +41,7 @@
     <_ProjectFileVersion>11.0.60610.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -92,6 +92,7 @@
     <ClCompile Include="..\..\Src\GLTools\src\math3d.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Src\GLTools\include\Application.h" />
     <ClInclude Include="..\..\Src\GLTools\include\GLBatch.h" />
     <ClInclude Include="..\..\Src\GLTools\include\GLBatchBase.h" />
     <ClInclude Include="..\..\Src\GLTools\include\GLFrame.h" />

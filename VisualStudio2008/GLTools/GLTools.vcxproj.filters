@@ -80,5 +80,8 @@
     <ClInclude Include="..\..\Src\GLTools\include\GL\wglew.h">
       <Filter>Header Files\GL</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\GLTools\include\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

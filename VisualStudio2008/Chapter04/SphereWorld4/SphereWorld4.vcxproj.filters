@@ -15,14 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\freeglut-2.6.0\VisualStudio2008Static\Release\freeglut_static.lib">
-      <Filter>Source Files</Filter>
-    </Library>
-    <Library Include="..\..\GLTools\Release\gltools.lib">
-      <Filter>Source Files</Filter>
-    </Library>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\..\Src\Chapter04\SphereWorld4\SphereWorld4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
