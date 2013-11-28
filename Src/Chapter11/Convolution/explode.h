@@ -4,7 +4,7 @@
 #ifndef __INSTANCING__
 #define __INSTANCING__
 
-#include <gltools.h>
+#include <GLTools.h>
 #include <GLFrustum.h>
 #include <GLBatch.h>
 #include <GLMatrixStack.h>

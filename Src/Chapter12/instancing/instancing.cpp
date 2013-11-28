@@ -9,9 +9,7 @@
 #include <GL/freeglut_ext.h>
 #endif
 
-#ifdef _MSC_VER
-#pragma comment (lib, "GLTools.lib")
-#endif /* _MSC_VER */
+
 
 static GLuint               instancingShader;        // The instancing renderer
 static GLuint               square_vao;

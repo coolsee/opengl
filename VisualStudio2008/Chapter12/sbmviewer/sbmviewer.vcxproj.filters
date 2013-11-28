@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Src\Chapter12\sbmviewer\GLMain.cpp" />
+    <ClCompile Include="..\..\..\Src\Chapter12\sbmviewer\sbmviewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Src\Chapter12\sbmviewer\sbmviewer.h" />
+  </ItemGroup>
+</Project>

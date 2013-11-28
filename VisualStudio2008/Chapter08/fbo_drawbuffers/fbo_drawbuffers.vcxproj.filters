@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{6ac8d328-8b5a-413f-9b34-e8103266b4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{cc664e45-a72d-4f46-b9c1-f46dca5f75e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{8231beb1-e4de-4028-af41-e6324193fe63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Src\Chapter08\fbo_drawbuffers\fbo_drawbuffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Src\Models\Ninja\sbm.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\freeglut-2.6.0\VisualStudio2008Static\Release\freeglut_static.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+    <Library Include="..\..\GLTools\Release\gltools.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Src\Models\Ninja\sbm.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="multibuffer.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="multibuffer.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="multibuffer_frag_location.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="LumLinear.data">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="LumSin.data">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="LumTan.data">
+      <Filter>Data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
