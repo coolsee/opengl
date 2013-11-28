@@ -37,6 +37,7 @@ GLint	locMV;				// The location of the ModelView matrix uniform
 GLint	locNM;				// The location of the Normal matrix uniform
 GLint   locTexture;
 GLuint  texture;
+GLint	locDissolveFactor;
 
 // Load a TGA as a 2D Texture. Completely initialize the state
 bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode)
@@ -98,6 +99,7 @@ void SetupRC(void)
 	locMV  = glGetUniformLocation(ADSTextureShader, "mvMatrix");
 	locNM  = glGetUniformLocation(ADSTextureShader, "normalMatrix");
 	locTexture = glGetUniformLocation(ADSTextureShader, "colorMap");
+	locDissolveFactor = glGetUniformLocation(ADSTextureShader, "dissolveFactor");
 
 	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
@@ -137,6 +139,10 @@ void RenderScene(void)
 		glUniformMatrix4fv(locMV, 1, GL_FALSE, transformPipeline.GetModelViewMatrix());
 		glUniformMatrix3fv(locNM, 1, GL_FALSE, transformPipeline.GetNormalMatrix());
 		glUniform1i(locTexture, 0);
+
+		float fFactor = fmod(rotTimer.GetElapsedSeconds(), 10.0f);
+		fFactor /= 10.0f;
+		glUniform1f(locDissolveFactor, fFactor);
     sphereBatch.Draw();
 
     modelViewMatrix.PopMatrix();

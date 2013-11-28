@@ -36,9 +36,9 @@ void SetupRC()
 	shaderManager.InitializeStockShaders();
 
 	// Load up a triangle
-	GLfloat vVerts[] = { -0.5f, 0.0f, 0.0f, 
-		                  0.5f, 0.0f, 0.0f,
-						  0.0f, 0.5f, 0.0f };
+	GLfloat vVerts[] = { -0.5f, 0.0f, -0.0f, 
+		                  0.5f, 0.0f, -2.0f,
+						  0.0f, 0.5f, -2.0f };
 
 	GLfloat vColors [] = { 1.0f, 0.0f, 0.0f, 1.0f,
 		                   0.0f, 1.0f, 0.0f, 1.0f,

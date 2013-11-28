@@ -10,6 +10,7 @@ uniform vec4      ambientColor;
 uniform vec4      diffuseColor;   
 uniform vec4      specularColor;
 uniform sampler2D colorMap;
+uniform float      dissolveFactor;
 
 smooth in vec3 vVaryingNormal;
 smooth in vec3 vVaryingLightDir;
@@ -17,6 +18,11 @@ smooth in vec2 vTexCoords;
 
 void main(void)
     { 
+    
+    vec3 tmp = texture(colorMap, vTexCoords);
+    if(tmp.r < dissolveFactor)
+        discard;
+        
     // Dot product gives us diffuse intensity
     float diff = max(0.0, dot(normalize(vVaryingNormal), normalize(vVaryingLightDir)));
 
@@ -29,6 +35,8 @@ void main(void)
     // Modulate in the texture
     vFragColor *= texture(colorMap, vTexCoords);
 
+    
+   
     // Specular Light
     vec3 vReflection = normalize(reflect(-normalize(vVaryingLightDir), normalize(vVaryingNormal)));
     float spec = max(0.0, dot(normalize(vVaryingNormal), vReflection));

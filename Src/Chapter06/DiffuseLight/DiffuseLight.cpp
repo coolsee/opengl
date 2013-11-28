@@ -46,7 +46,7 @@ void SetupRC(void)
 	glEnable(GL_CULL_FACE);
 
     shaderManager.InitializeStockShaders();
-    viewFrame.MoveForward(4.0f);
+    viewFrame.MoveForward(10.0f);
 
     // Make the sphere
     gltMakeSphere(sphereBatch, 1.0f, 26, 13);

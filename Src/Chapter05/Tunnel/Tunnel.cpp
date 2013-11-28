@@ -75,7 +75,10 @@ void ProcessMenu(int value)
                 
             case 5:
                 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-                break;                
+                break;   
+			case 6:
+				gltGrabScreenTGA("test.tga");
+				break;
             }
         }
         
@@ -246,8 +249,8 @@ void RenderScene(void)
     // Clear the window with current clearing color
     glClear(GL_COLOR_BUFFER_BIT);
 
-    modelViewMatrix.PushMatrix();
-        modelViewMatrix.Translate(0.0f, 0.0f, viewZ);
+    projectionMatrix.PushMatrix();
+        projectionMatrix.Translate(0.0f, 0.0f, viewZ);
         
         shaderManager.UseStockShader(GLT_SHADER_TEXTURE_REPLACE, transformPipeline.GetModelViewProjectionMatrix(), 0);
 
@@ -261,7 +264,7 @@ void RenderScene(void)
         leftWallBatch.Draw();
         rightWallBatch.Draw();
         
-    modelViewMatrix.PopMatrix();
+    projectionMatrix.PopMatrix();
 
     // Buffer swap
     glutSwapBuffers();
@@ -291,6 +294,7 @@ int main(int argc, char *argv[])
     glutAddMenuEntry("GL_NEAREST_MIPMAP_LINEAR", 3);
     glutAddMenuEntry("GL_LINEAR_MIPMAP_NEAREST", 4);
     glutAddMenuEntry("GL_LINEAR_MIPMAP_LINEAR", 5);
+	glutAddMenuEntry("create tga", 6);
 
     glutAttachMenu(GLUT_RIGHT_BUTTON);
     
